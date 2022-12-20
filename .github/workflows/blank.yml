@@ -1,11 +1,6 @@
 name: Test env variable parse
 
 on:
-  push:
-
-defaults:
-  run:
-    shell: bash
 
 concurrency:
   group: 'ci'
