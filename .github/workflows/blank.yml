@@ -1,6 +1,11 @@
 name: Test env variable parse
 
 on:
+  push:
+
+defaults:
+  run:
+    shell: bash
 
 concurrency:
   group: 'ci'
@@ -15,5 +20,5 @@ jobs:
       - name: Print the release author
         shell: bash
         run: |
+          exit 1
           echo "Hello World!"
-
