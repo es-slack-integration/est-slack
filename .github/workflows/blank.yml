@@ -20,5 +20,5 @@ jobs:
       - name: Print the release author
         shell: bash
         run: |
+          exit 1
           echo "Hello World!"
-
