@@ -2,6 +2,7 @@ name: Test env variable parse
 
 on:
   push:
+  workflow_dispatch:
 
 defaults:
   run:
