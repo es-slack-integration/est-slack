@@ -2,7 +2,7 @@ name: Test env variable parse
 
 on:
   push:
-
+  pull_request:
 defaults:
   run:
     shell: bash
