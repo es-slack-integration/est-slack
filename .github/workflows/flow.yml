@@ -1,0 +1,23 @@
+name: Test env variable
+
+on:
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash
+
+concurrency:
+  group: 'ci'
+  cancel-in-progress: true
+
+jobs:
+  parse_for_flags:
+    name: Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print the release author
+        shell: bash
+        run: |
+          echo "Hello World!"
